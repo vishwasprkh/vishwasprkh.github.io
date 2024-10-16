@@ -1,0 +1,393 @@
+#assignment2 {
+    background-color: #efefef;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    width: 1700px;
+}
+
+.noResults {
+    width: 35%;
+    margin: -15px auto;
+    text-align: center;
+    border-bottom: 3px solid #c7c7c7;
+    border-left: 2px solid #c7c7c7;
+    border-top: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+    color: #4E6FAD;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.outer-divs:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: box-shadow 0.3s ease;
+}
+
+.search-box {
+    width: 35%;
+    margin: 40px auto;
+    display: block;
+    border: 1.5px solid #cfcfcf;
+}
+
+.top-search-box {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-image: url(Images/banner.jpg);
+    background-position: 0px -80px;
+    padding-left: 40px;
+    padding-top: 16px;
+    padding-bottom: 2px;
+}
+
+.top-search-box h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 0px;
+    color: #494949;
+}
+
+.top-search-box p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #4e4e4e;
+}
+
+.bottom-search-box {
+    background-color: white;
+    border: 1.5px solid #cfcfcf;
+    box-sizing: border-box;
+    padding: 25px;
+    padding-left: 45px;
+    padding-right: 45px;
+    display: block;
+}
+
+.bottom-search-box label {
+    color: #4e6fad;
+    font-size: 15px;
+}
+
+.bottom-search-box input[type="text"] {
+    width: 100%;
+    height: 27px;
+    margin-top: 8px;
+    margin-bottom: 15px;
+    border: 1.5px solid #cfcfcf;
+}
+
+.bottom-search-box sup {
+    color: #e88798;
+}
+
+.city-state {
+    display: flex;
+}
+
+.city {
+    float: left;
+    width: 50%;
+}
+
+.city input[type="text"] {
+    width: 80%;
+}
+
+.state {
+    float: right;
+    width: 50%;
+}
+
+.state select {
+    margin-top: 8px;
+    font-size: 15px;
+    width: 101%;
+    box-shadow: 0.75px 0.75px 1px rgba(0, 0, 0, 0.2);
+    padding-left: 5px;
+    color: #494949;
+    border: 1.5px #cfcfcf;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #e1e1e1 0%, #f5f5f5 50%, #e1e1e1 100%);
+    height: 21px;
+}
+
+.state select:disabled {
+    background: linear-gradient(to bottom, #d9d9d9 0%, #f5f5f5 50%, #d9d9d9 100%);
+    color: #4e4e4e;       
+    border: 1.5px #cfcfcf;
+    cursor: not-allowed;
+}
+
+.search-box-horizontal-tag {
+    margin-bottom: 15px;
+    border: none;
+    border-top: 1.75px solid #cfcfcf;
+}
+
+.check-box {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.check-box label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.check-box input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.submit-button {
+    background-color: #4e6fad;
+    color: white;
+    padding: 13px 26px 8px 26px;
+    font-size: 17px;
+    font-weight: 200;
+    border: none;
+    border-bottom: 5px solid #364b77;
+}
+
+.clear-button {
+    background-color: #fcb606;
+    color: white;
+    padding: 13px 26px 8px 26px;
+    font-size: 17px;
+    font-weight: 200;
+    border: none;
+    border-bottom: 5px solid #fa8402;
+}
+
+.dayDataOuter {
+    background-color: white;
+    width: 45%;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #878787;
+    border-bottom: 3px solid #c7c7c7;
+    border-left: 2px solid #c7c7c7;
+    border-top: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+    font-family: 'Roboto';
+}
+  
+.dayDataOuter h2 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.day-weather-main {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.day-temperature-div {
+    margin-left: 250px;
+} 
+
+.day-temperature-div h1 {
+    font-size: 145px;
+    font-weight: 300;
+    margin: 10px 5px;
+}
+
+.day-weather-icon {
+    margin-left: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.day-weather-icon img {
+    width: 150px;
+    height: 150px;
+}
+
+.day-weather-icon p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.day-weather-details {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.day-detail img {
+    width: 33px;
+    height: 33px;
+}
+
+.day-detail p {
+    margin: 18px 0px 28px;
+    font-size: 18.5px;
+    font-weight: 400;
+}
+
+.weeklyDataOuter {
+    width: 70%;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+.weeklyDataOuter table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #343a48;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto';
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.weeklyDataOuter th {
+    background-color: #4e6fad;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-weight: 400;
+    font-size: 18px
+}
+
+.weeklyDataOuter td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.weeklyDataOuter tr {
+    background-color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.status-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status-cell img {
+    height: 60px;
+    width: 60px;
+    padding-right: 10px;
+}
+
+.secondPageHeaders {
+    width: 35%;
+    margin: 50px auto 20px;
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Roboto';
+}
+
+.dividingLine {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    width: 25%;
+    margin: 20px auto;
+}
+
+.dailyWeatherDetails {
+    width: 35%;
+    margin: 40px auto;
+    background: linear-gradient(to bottom, white, #374d77);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding-top: 25px;
+    padding-bottom: 38px;
+    border-bottom: 3px solid #c7c7c7;
+    border-left: 2px solid #c7c7c7;
+    border-top: 2px solid #c7c7c7;
+    border-right: 2px solid #c7c7c7;
+    font-family: 'Roboto';
+}
+
+.dailyWeatherDetailsText {
+    margin-left: 23px;
+    margin-right: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dailyWeatherDetailsHeaders {
+    float: left;
+    font-size: 27px;
+    color: #384c75;
+    text-align: left;
+    font-weight: 400;
+    flex: 1;
+}
+
+.dailyWeatherDetails p {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.dailyWeatherDetails h2 {
+    font-size: 32px;
+    color: #384c75;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.dailyWeatherDetailsSubText {
+    padding-top: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dailyWeatherDetailsSubText p {
+    color: white;
+    font-weight: 400;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.detailsLabel{
+    font-size: 20px;
+}
+
+.detailsValues {
+    font-size: 24px;
+}
+
+.dailyWeatherImage {
+    width: 27.5%;
+    float: right;
+}
+
+.weatherChartsToggle {
+    width: 3.25%;
+    margin: 10px auto;
+}
+
+.toggleButton {
+    width: 100%;
+    cursor: pointer;
+}
+
+.chartContainer {
+    height: 450px;
+    width: 55%;
+    margin: 10px auto 50px;
+}
+
+.highcharts-tooltip {
+    font-size: 12px;
+}
