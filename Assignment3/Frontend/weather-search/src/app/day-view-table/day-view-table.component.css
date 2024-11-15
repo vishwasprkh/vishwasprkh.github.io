@@ -1,0 +1,14 @@
+.weather-icon {
+  max-height: 30px;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .small-text td, .small-text th {
+    font-size: 12px;
+  }
+  .weather-icon {
+    max-height: 20px;
+    height: 100%;
+  }
+}

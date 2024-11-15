@@ -1,0 +1,25 @@
+<div class="table-responsive">
+    <table class="table table-sm small-text">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Temp. High(°F)</th>
+                <th>Temp. Low(°F)</th>
+                <th>Wind Speed(mph)</th>
+            </tr>
+        </thead>
+         <tbody>
+            <tr *ngFor="let day of dayDataFormatted; let i = index">
+                <td>{{i+1}}</td>
+                <td><a href="#" (click)="onDateClick(i)">{{day.Date}}</a></td>
+                <td><div (click)="onDateClick(i)"><img [src]="day.Url" class="weather-icon"> {{day.Status}}</div></td>
+                <td><p (click)="onDateClick(i)">{{day.High}}</p></td>
+                <td><p (click)="onDateClick(i)">{{day.Low}}</p></td>
+                <td><p (click)="onDateClick(i)">{{day.Wind}}</p></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
